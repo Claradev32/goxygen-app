@@ -28,6 +28,7 @@ func dataSource() string {
 	if os.Getenv("profile") == "prod" {
 		host = "db"
 		pass = os.Getenv("db_pass")
+	
 	}
 	return "postgresql://" + host + ":5432/goxygen" +
 		"?user=goxygen&sslmode=disable&password=" + pass

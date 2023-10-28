@@ -1,3 +1,10 @@
+CREATE TABLE blogs (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    coverURL VARCHAR(255),
+    body VARCHAR(255)
+);
+
 CREATE TABLE technologies (
   name    VARCHAR(255),
   details VARCHAR(255)
@@ -11,3 +18,5 @@ insert into technologies values (
 insert into technologies values (
   'PostgreSQL', 'A powerful, open source object-relational database system'
 );
+
+
